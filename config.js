@@ -9,7 +9,7 @@ const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '9_8_a63c_5f11_39b2').trim(),
+  SESSION_ID: (process.env.SESSION_ID || '9_8_053c_5797_7f33').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -45,12 +45,12 @@ module.exports = {
   ANTILINK_MSG: process.env.ANTILINK_MSG || '_Hey, il est interdit de faire ça bon bah aurevoir 🥲 &mention kicked_',
   ANTISPAM_MSG: process.env.ANTISPAM_MSG || '_Arrête tu es gênant😑 &mention kicked_',
   ANTIWORDS_MSG: process.env.ANTIWORDS_MSG || '_Un bien villain mot, tu crois que tahaman en est fière🤨 &mention kicked_',
-  ANTIWORDS: process.env.ANTIWORDS || 'Con, Tahaman, Tonpaha, Babiai, Bois, fou',
+  ANTIWORDS: process.env.ANTIWORDS || 'Con,Tahaman,Tonpaha,Babiai,Bois,fou',
   MENTION: process.env.MENTION || '',
   MAX_UPLOAD: process.env.MAX_UPLOAD || 230,
   REJECT_CALL: toBool(process.env.REJECT_CALL),
   VPS: toBool(process.env.VPS),
-  AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'false').trim(),
+  AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'true').trim(),
   SEND_READ: toBool(process.env.SEND_READ),
   KOYEB: toBool(process.env.KOYEB),
   KOYEB_NAME: (process.env.KOYEB_NAME || '').trim(),
