@@ -9,7 +9,7 @@ const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '7_8_04df_62e7_d32f').trim(),
+  SESSION_ID: (process.env.SESSION_ID || '9_8_a63c_5f11_39b2').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -28,11 +28,11 @@ module.exports = {
           logging: false,
         }),
   HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
-  SUDO: process.env.SUDO || '',
+  SUDO: process.env.SUDO || '237659958008',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
-  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,LyFE',
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,𝑬. 𝑱𝒖𝒔𝒕𝒊𝒏🌥️',
   ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE),
   LOG_MSG: toBool(process.env.LOG_MSG) || false,
   RMBG_KEY: process.env.RMBG_KEY || 'null',
@@ -42,10 +42,10 @@ module.exports = {
   FORCE_LOGOUT: toBool(process.env.FORCE_LOGOUT),
   BRAINSHOP: process.env.BRAINSHOP || '159501,6pq8dPiYt7PdqHz3',
   DIS_BOT: process.env.DISABLE_BOT || 'null',
-  ANTILINK_MSG: process.env.ANTILINK_MSG || '_Antilink Detected &mention kicked_',
-  ANTISPAM_MSG: process.env.ANTISPAM_MSG || '_Antispam Detected &mention kicked_',
-  ANTIWORDS_MSG: process.env.ANTIWORDS_MSG || '_AntiWord Detected &mention kicked_',
-  ANTIWORDS: process.env.ANTIWORDS || 'word',
+  ANTILINK_MSG: process.env.ANTILINK_MSG || '_Hey, il est interdit de faire ça bon bah aurevoir 🥲 &mention kicked_',
+  ANTISPAM_MSG: process.env.ANTISPAM_MSG || '_Arrête tu es gênant😑 &mention kicked_',
+  ANTIWORDS_MSG: process.env.ANTIWORDS_MSG || '_Un bien villain mot, tu crois que tahaman en est fière🤨 &mention kicked_',
+  ANTIWORDS: process.env.ANTIWORDS || 'Con, Tahaman, Tonpaha, Babiai, Bois, fou',
   MENTION: process.env.MENTION || '',
   MAX_UPLOAD: process.env.MAX_UPLOAD || 230,
   REJECT_CALL: toBool(process.env.REJECT_CALL),
